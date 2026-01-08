@@ -10,7 +10,7 @@ const app=express();
 app.use(
     cors({
         origin:[
-            'http://localhost:3000','https://lead-flow-crm-delta.vercel.app/',
+            'http://localhost:3000','https://lead-flow-crm-delta.vercel.app',
         ],
         methods:["GET","POST","PUT","PATCH"]
     })
