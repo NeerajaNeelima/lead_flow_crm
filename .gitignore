@@ -1,0 +1,53 @@
+# ======================================
+# GLOBAL (applies to all projects)
+# ======================================
+node_modules/
+**/node_modules/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+.DS_Store
+Thumbs.db
+
+# ======================================
+# ENV FILES (all projects)
+# ======================================
+.env
+.env.*
+!.env.example
+
+# ======================================
+# COVERAGE / TEST
+# ======================================
+coverage/
+**/coverage/
+
+# ======================================
+# FRONTEND (my-leads)
+# ======================================
+my-leads/build/
+my-leads/dist/
+my-leads/.pnp
+my-leads/.pnp.js
+
+# ======================================
+# BACKEND
+# ======================================
+backend/dist/
+backend/logs/
+backend/tmp/
+
+# ======================================
+# EDITORS / IDE
+# ======================================
+.vscode/
+.idea/
+
+# ======================================
+# OPTIONAL: Docker artifacts
+# ======================================
+**/*.tar
+**/docker-data/
