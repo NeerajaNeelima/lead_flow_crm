@@ -31,7 +31,7 @@ const ActivityModal = ({ visible, onCancel, leadId, onActivityAdded }) => {
   const fetchActivities = async () => {
     try {
       setLoadingActivities(true);
-      const res = await axios.get(`http://localhost:5000/api/lead/${leadId}`);
+      const res = await axios.get(`https://lead-flow-crm.onrender.com/api/lead/${leadId}`);
       if (res.data.success && res.data.data.activities) {
         setActivities(res.data.data.activities);
       }

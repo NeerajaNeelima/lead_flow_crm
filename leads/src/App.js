@@ -64,7 +64,7 @@ function App() {
   /* ---------------- FETCH LEADS ---------------- */
   const fetchLeads = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/lead/leads');
+      const res = await axios.get('https://lead-flow-crm.onrender.com/api/lead/leads');
       if (res.data.success) {
         setLeadsList(res.data.data);
       }
@@ -82,7 +82,7 @@ function App() {
     try {
       setLoading(true);
       const res = await axios.post(
-        'http://localhost:5000/api/lead/create',
+        'https://lead-flow-crm.onrender.com/api/lead/create',
         form
       );
 
@@ -111,7 +111,7 @@ function App() {
   const updateLeadStatus = async (leadId, newStatus) => {
     try {
       setUpdatingLead(leadId);
-      const res = await axios.patch(`http://localhost:5000/api/lead/${leadId}/status`, {
+      const res = await axios.patch(`https://lead-flow-crm.onrender.com/api/lead/${leadId}/status`, {
         status: newStatus
       });
 
